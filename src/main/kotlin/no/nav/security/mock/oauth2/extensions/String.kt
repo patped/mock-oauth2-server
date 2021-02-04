@@ -11,4 +11,4 @@ internal fun String.keyValuesToMap(listDelimiter: String): Map<String, String> =
             key.urlDecode().trim() to value.urlDecode().trim()
         }
 
-internal fun String.urlDecode(): String = URLDecoder.decode(this, StandardCharsets.UTF_8)
+internal fun String.urlDecode(): String = URLDecoder.decode(this, StandardCharsets.UTF_8.name())
